@@ -1,25 +1,4 @@
-## Application Details
-|               |
-| ------------- |
-|**Generation Date and Time**<br>Thu Oct 10 2024 07:26:44 GMT+0000 (Coordinated Universal Time)|
-|**App Generator**<br>@sap/generator-fiori-freestyle|
-|**App Generator Version**<br>1.15.1|
-|**Generation Platform**<br>SAP Business Application Studio|
-|**Template Used**<br>simple|
-|**Service Type**<br>OData Url|
-|**Service URL**<br>https://services.odata.org/V2/Northwind/Northwind.svc/|
-|**Module Name**<br>zr_toya01|
-|**Application Title**<br>Zadanie rekrutacyjne TOYA S.A.|
-|**Namespace**<br>|
-|**UI5 Theme**<br>sap_fiori_3|
-|**UI5 Version**<br>1.71.70|
-|**Enable Code Assist Libraries**<br>False|
-|**Enable TypeScript**<br>False|
-|**Add Eslint configuration**<br>False|
-
-## zr_toya01
-
-Zadanie rekrutacyjne TOYA S.A.
+## Recruitment task
 
 ### Starting the generated app
 
@@ -38,5 +17,25 @@ Zadanie rekrutacyjne TOYA S.A.
 #### Pre-requisites:
 
 1. Active NodeJS LTS (Long Term Support) version and associated supported NPM version.  (See https://nodejs.org)
+
+
+## Application Details
+|               |
+| ------------- |
+|**Generation Date and Time**<br>Thu Oct 10 2024 07:26:44 GMT+0000 (Coordinated Universal Time)|
+|**App Generator**<br>@sap/generator-fiori-freestyle|
+|**App Generator Version**<br>1.15.1|
+|**Generation Platform**<br>SAP Business Application Studio|
+|**Template Used**<br>simple|
+|**Service Type**<br>OData Url|
+|**Service URL**<br>https://services.odata.org/V2/Northwind/Northwind.svc/|
+|**Module Name**<br>zr_toya01|
+|**Application Title**<br>Zadanie rekrutacyjne TOYA S.A.|
+|**Namespace**<br>|
+|**UI5 Theme**<br>sap_fiori_3|
+|**UI5 Version**<br>1.71.70|
+|**Enable Code Assist Libraries**<br>False|
+|**Enable TypeScript**<br>False|
+|**Add Eslint configuration**<br>False|
 
 
