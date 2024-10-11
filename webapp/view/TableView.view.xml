@@ -1,0 +1,176 @@
+<mvc:View
+    xmlns:cards="sap.f.cards"
+    controllerName="zrtoya01.controller.TableView"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:smartTable="sap.ui.comp.smarttable"
+    height="100%"
+>
+    <Page
+        id="page2"
+        title="{i18n>title}"
+    >
+        <Toolbar id="_IDGenToolbar1">
+            <Button
+                id="_IDBackButton"
+                text="Powrót"
+                type="Emphasized"
+                press="backButton()"
+            />
+            <ToolbarSpacer id="_IDGenToolbarSpacer1" />
+        </Toolbar>
+
+        <!-- Creating SmartTable with custom columns to enable sorting or filtering only specific ones-->
+        <content>
+            <smartTable:SmartTable
+                id="SmartTableID"
+                entitySet="Customers"
+                enableAutoBinding="true"
+                tableType="ResponsiveTable"
+            >
+                <Table
+                    id="idResponsiveTable"
+                    selectionChange="handleSelectionChange"
+                    mode="SingleSelectMaster"
+                >
+                    <columns>
+                        <Column
+                            id="CompanyNameColumnID"
+                            hAlign="Begin"
+                        >
+                            <customData>
+                                <core:CustomData
+                                    key="p13nData"
+                                    value='\{"columnKey": "CompanyName", "columnIndex":"0", "leadingProperty": "CompanyName", "sortProperty": "CompanyName", "width": "360px"}'
+                                />
+                            </customData>
+                            <Text
+                                id="_IDColumnNameText1"
+                                text="Nazwa firmy"
+                            />
+                        </Column>
+
+                        <Column
+                            id="AddressColumnID"
+                            hAlign="Begin"
+                        >
+                            <customData>
+                                <core:CustomData
+                                    key="p13nData"
+                                    value='\{"columnKey": "Address", "columnIndex":"1", "leadingProperty": "Address", "width": "360px"}'
+                                />
+                            </customData>
+                            <Text
+                                id="_IDColumnNameText2"
+                                text="Adres"
+                            />
+                        </Column>
+
+                        <Column
+                            id="CityColumnID"
+                            hAlign="Begin"
+                        >
+                            <customData>
+                                <core:CustomData
+                                    key="p13nData"
+                                    value='\{"columnKey": "City", "columnIndex":"2", "leadingProperty": "City", "filterProperty": "City", "width": "360px"}'
+                                />
+                            </customData>
+                            <Text
+                                id="_IDColumnNameText3"
+                                text="Miasto"
+                            />
+                        </Column>
+
+                        <Column
+                            id="PostalCodeColumnID"
+                            hAlign="Begin"
+                        >
+                            <customData>
+                                <core:CustomData
+                                    key="p13nData"
+                                    value='\{"columnKey": "PostalCode", "columnIndex":"3", "leadingProperty": "PostalCode", "width": "360px"}'
+                                />
+                            </customData>
+                            <Text
+                                id="_IDColumnNameText4"
+                                text="Kod pocztowy"
+                            />
+                        </Column>
+
+                        <Column
+                            id="PhoneColumnID"
+                            hAlign="Begin"
+                        >
+                            <customData>
+                                <core:CustomData
+                                    key="p13nData"
+                                    value='\{"columnKey": "Phone", "columnIndex":"4", "leadingProperty": "Phone", "width": "360px"}'
+                                />
+                            </customData>
+                            <Text
+                                id="_IDColumnNameText5"
+                                text="Numer telefonu"
+                            />
+                        </Column>
+                    </columns>
+
+                    <items>
+                        <ColumnListItem id="_IDGenColumnListItem">
+                            <cells>
+                                <Text
+                                    id="_IDCellTextCompanyName"
+                                    text="{CompanyName}"
+                                />
+                            </cells>
+                            <cells>
+                                <Text
+                                    id="_IDCellTextAddress"
+                                    text="{Address}"
+                                />
+                            </cells>
+                            <cells>
+                                <Text
+                                    id="_IDCellTextCity"
+                                    text="{City}"
+                                />
+                            </cells>
+                            <cells>
+                                <Text
+                                    id="_IDCellTextPostalCode"
+                                    text="{PostalCode}"
+                                />
+                            </cells>
+                            <cells>
+                                <Text
+                                    id="_IDCellTextPhone"
+                                    text="{Phone}"
+                                />
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+                </Table>
+            </smartTable:SmartTable>
+        </content>
+
+        <footer>
+            <Bar id="_IDGenBar">
+                <contentLeft>
+                    <Text
+                        id="_IDGenText1"
+                        text="Zadaie rekrutacyjne"
+                    />
+                </contentLeft>
+
+                <contentRight>
+                    <Text
+                        id="_IDGenText3"
+                        text="Krystian Grzegorek"
+                    />
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>

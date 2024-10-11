@@ -1,0 +1,54 @@
+<mvc:View
+    xmlns:cards="sap.f.cards"
+    controllerName="zrtoya01.controller.StartView"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:tnt="sap.tnt"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+            <VBox
+                id="_IDGenVBox1"
+                class="custform"
+                fitContainer="true"
+            >
+                <form:SimpleForm
+                    id="_IDGenSimpleForm"
+                    title="Witaj na stronie początkowej!"
+                    editable="true"
+                    layout="ResponsiveGridLayout"
+                    xmlns:form="sap.ui.layout.form"
+                >
+                    <Button
+                        id="_IDGenButton11"
+                        text="Przejdź na kolejną stronę"
+                        type="Emphasized"
+                        press="loginButton()"
+                    />
+                </form:SimpleForm>
+            </VBox>
+        </content>
+
+        <footer>
+            <Bar id="_IDGenBar1">
+                <contentLeft>
+                    <Text
+                        id="_IDGenTextPage1_1"
+                        text="Zadaie rekrutacyjne"
+                    />
+                </contentLeft>
+
+                <contentRight>
+                    <Text
+                        id="_IDGenText31"
+                        text="Krystian Grzegorek"
+                    />
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>
